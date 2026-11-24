@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Nebula · Bio-Enhancement Simulation</title>
+  <meta
+    name="description"
+    content="Nebula is a fictional bio-enhancement simulation dashboard. All gas, mutation, and hazard data is simulated for demonstration only."
+  />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#070b14" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23070b14'/%3E%3Cpath d='M16 5l3.2 7.8L27 16l-7.8 3.2L16 27l-3.2-7.8L5 16l7.8-3.2z' fill='%2338bdf8'/%3E%3C/svg%3E"
+  />
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <!-- Chart.js must load before charts.js uses window.Chart. -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"
+    defer
+  ></script>
+
+  <!-- The app shell and page router. -->
+  <script type="module" src="/js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#app-content">Skip to main content</a>
+
+  <div id="app">
+    <main class="app-main">
+      <div class="loading-state">
+        <span class="spinner" aria-hidden="true"></span>
+        <span>Starting Nebula…</span>
+      </div>
+    </main>
+  </div>
+
+  <noscript>
+    <div class="app-main">
+      <div class="error-state" role="alert">
+        <p>
+          Nebula needs JavaScript to run because its pages are rendered
+          from the simulation API.
+        </p>
+        <p>Enable JavaScript in your browser and reload the page.</p>
+      </div>
+    </div>
+  </noscript>
+</body>
+</html>
